@@ -32,5 +32,8 @@ class Albums {
         list.append(item2)
         list.append(Album(id: 2, albumBGImage: UIImage(named: "bird 1.png")!, albumName: "Birds", photos: [UIImage(named: "bird 1.png")!,UIImage(named: "bird 2.png")!]))
         list.append(Album(id: 3, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
+        list.append(Album(id: 4, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
+        list.append(Album(id: 5, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
+        list.append(Album(id: 6, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
     }
 }

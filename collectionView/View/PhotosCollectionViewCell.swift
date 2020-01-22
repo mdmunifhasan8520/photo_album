@@ -14,5 +14,19 @@ class PhotosCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var albumPhotosImageView: UIImageView!
     
-    
+    @IBOutlet weak var selectedImageIconView: UIImageView!
+    override var isSelected: Bool {
+        didSet {
+            if self.isSelected {
+                //backgroundColor = UIColor.red
+                //photosNameLabel.text = "selected"
+                selectedImageIconView.isHidden = false
+                selectedImageIconView.image = UIImage(named: "CheckmarkIcon")
+            }
+            else {
+                //backgroundColor = UIColor.purple
+                selectedImageIconView.isHidden = true
+            }
+        }
+    }
 }

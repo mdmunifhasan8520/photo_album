@@ -15,16 +15,17 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var albumCollectionView: UICollectionView!
-    
     @IBOutlet weak var photosCollectionView: UICollectionView!
     
-    
- 
     var userSelectedAlbum = [Int]()
+//    var userSelectedPhotos = [Int]()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        photosCollectionView.allowsMultipleSelection = true
+      
         
     }
 }
@@ -74,6 +75,9 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource {
         
         if collectionView == self.photosCollectionView {
             let cell = collectionView.cellForItem(at: indexPath)
+//            let userSelectedPhotos = allAlbums.list[0].photos[indexPath.item]!
+//            print("userSelectedPhotos \(userSelectedPhotos)")
+            
 
         } else {
             let cell = collectionView.cellForItem(at: indexPath)
@@ -90,15 +94,40 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource {
 //        vc.albumImage = albumBGImage
 //        self.navigationController?.pushViewController(vc, animated: true)
     }
+    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+     
+    }
     
+    
+
+    //Custom Function
     func updateUI() {
     
         if (userSelectedAlbum == [0]) {
-            print("hello")
+            //print("hello")
         } else if (userSelectedAlbum == [1]){
-            print("Hi")
+            //print("Hi")
         }
         self.photosCollectionView.reloadData()
         print("reload")
+    }
+}
+
+extension ViewController : UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionViewWidth = collectionView.bounds.width
+        return CGSize(width: collectionViewWidth/3, height: collectionViewWidth/3)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 5
     }
 }
