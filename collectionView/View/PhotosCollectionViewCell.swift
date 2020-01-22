@@ -22,10 +22,12 @@ class PhotosCollectionViewCell: UICollectionViewCell {
                 //photosNameLabel.text = "selected"
                 selectedImageIconView.isHidden = false
                 selectedImageIconView.image = UIImage(named: "CheckmarkIcon")
+                albumPhotosImageView.alpha = 0.5
             }
             else {
                 //backgroundColor = UIColor.purple
                 selectedImageIconView.isHidden = true
+                albumPhotosImageView.alpha = 1
             }
         }
     }

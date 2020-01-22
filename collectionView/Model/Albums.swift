@@ -28,12 +28,21 @@ class Albums {
         
         
         let item2 = Album(id: 1, albumBGImage: UIImage(named: "Album 1")!, albumName: "Nature",
-                          photos: [UIImage(named: "Album 1")!,UIImage(named: "Album 2")!,UIImage(named: "Album 3")!])
+                          photos: [UIImage(named: "Album 1")!,UIImage(named: "Album 2")!,UIImage(named: "Album 3")!,UIImage(named: "Album 2")!,UIImage(named: "Album 3")!,UIImage(named: "Album 5")!,UIImage(named: "Album 6")!,UIImage(named: "Album 4")!])
         list.append(item2)
         list.append(Album(id: 2, albumBGImage: UIImage(named: "bird 1.png")!, albumName: "Birds", photos: [UIImage(named: "bird 1.png")!,UIImage(named: "bird 2.png")!]))
         list.append(Album(id: 3, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
         list.append(Album(id: 4, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
         list.append(Album(id: 5, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
         list.append(Album(id: 6, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
+        list.append(Album(id: 7, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
+        list.append(Album(id: 8, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
+        list.append(Album(id: 9, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
+        list.append(Album(id: 10, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
+        list.append(Album(id: 11, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
+        list.append(Album(id: 12, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
+        list.append(Album(id: 13, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
+        list.append(Album(id: 14, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
+        list.append(Album(id: 15, albumBGImage: UIImage(named: "Fish 1")!, albumName: "Fish", photos: [UIImage(named: "Fish 1")!]))
     }
 }
