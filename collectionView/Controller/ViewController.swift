@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     let allAlbums = Albums()
     
     
-
     @IBOutlet weak var albumCollectionView: UICollectionView!
     
     @IBOutlet weak var photosCollectionView: UICollectionView!
@@ -26,7 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //print(allAlbums.list.count)
+        
     }
 }
 
