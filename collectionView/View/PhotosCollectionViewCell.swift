@@ -12,7 +12,7 @@ class PhotosCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var photosNameLabel: UILabel!
     
-    @IBOutlet weak var albumPhotosImageView: UIImageView!
+    @IBOutlet weak var PhotosImageView: UIImageView!
     
     @IBOutlet weak var selectedImageIconView: UIImageView!
     override var isSelected: Bool {
@@ -22,12 +22,12 @@ class PhotosCollectionViewCell: UICollectionViewCell {
                 //photosNameLabel.text = "selected"
                 selectedImageIconView.isHidden = false
                 selectedImageIconView.image = UIImage(named: "CheckmarkIcon")
-                albumPhotosImageView.alpha = 0.5
+                PhotosImageView.alpha = 0.5
             }
             else {
                 //backgroundColor = UIColor.purple
                 selectedImageIconView.isHidden = true
-                albumPhotosImageView.alpha = 1
+                PhotosImageView.alpha = 1
             }
         }
     }
