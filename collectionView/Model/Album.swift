@@ -13,7 +13,7 @@ class Album {
     let id: Int
     let albumBGImage: UIImage!
     let albumName: String
-    let photos: [UIImage!]
+    let photos: [UIImage?]
    
    
     //initialize properties
